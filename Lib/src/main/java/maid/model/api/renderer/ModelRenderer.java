@@ -290,7 +290,7 @@ public class ModelRenderer {
     public ModelRenderer addParts(Class<? extends ModelBoxBase> pModelBoxBase, String pName, Object ... pArg) {
         pName = boxName + "." + pName;
         TextureOffset ltextureoffset = baseModel.getTextureOffset(pName);
-        setTextureOffset(ltextureoffset.textureOffsetX(), ltextureoffset.textureOffsetY());
+        setTextureOffset(ltextureoffset.textureOffsetX, ltextureoffset.textureOffsetY);
         addCubeList(getModelBoxBase(pModelBoxBase, getArg(pArg)).setBoxName(pName));
         return this;
     }

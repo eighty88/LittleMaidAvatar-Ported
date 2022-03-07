@@ -1,7 +1,7 @@
 package maid.model.api.model.caps;
 
 import maid.model.api.renderer.ModelRenderer;
-import net.minecraft.data.models.model.TexturedModel;
+import net.minecraft.client.renderer.model.Model
 
 public class ModelPlate extends ModelBoxBase {
 

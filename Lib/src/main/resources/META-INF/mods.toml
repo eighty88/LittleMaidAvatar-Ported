@@ -13,12 +13,12 @@ This is a description.
 [[dependencies.maidlibrary]]
     modId="forge"
     mandatory=true
-    versionRange="[40,)"
+    versionRange="[36,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.maidlibrary]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2,1.19)"
+    versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
