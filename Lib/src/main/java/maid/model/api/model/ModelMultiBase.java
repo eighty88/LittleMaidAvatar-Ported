@@ -3,10 +3,8 @@ package maid.model.api.model;
 import maid.lib.Library;
 import maid.model.api.caps.IModelCaps;
 import maid.model.api.renderer.ModelRenderer;
-import net.minecraft.util.Mth;
+import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.api.distmarker.Dist;
-
-import static maid.model.api.caps.IModelCaps.*;
 
 public abstract class ModelMultiBase extends ModelBase implements IModelCaps {
 
@@ -293,23 +291,23 @@ public abstract class ModelMultiBase extends ModelBase implements IModelCaps {
 
 
     public static float mh_sqrt_float(float f) {
-        return Mth.sqrt(f);
+        return MathHelper.sqrt(f);
     }
 
     public static float mh_sqrt_double(double d) {
-        return Mth.sqrt((float) d);
+        return MathHelper.sqrt((float) d);
     }
 
     public static int mh_floor_float(float f) {
-        return Mth.floor(f);
+        return MathHelper.floor(f);
     }
 
     public static int mh_floor_double(double d) {
-        return Mth.floor(d);
+        return MathHelper.floor(d);
     }
 
     public static long mh_floor_double_long(double d) {
-        return Mth.floor(d);
+        return MathHelper.floor(d);
     }
 
     /**

@@ -1,6 +1,7 @@
 package maid.model.api.model.caps;
 
 import maid.model.api.renderer.ModelRenderer;
+import net.minecraft.client.renderer.model.ModelRenderer.*;
 
 public class ModelBox extends ModelBoxBase {
 
@@ -60,12 +61,12 @@ public class ModelBox extends ModelBoxBase {
         vertexPositions[5] = lwyd;
         vertexPositions[6] = lwhd;
         vertexPositions[7] = lxhd;
-        quadList[0] = new TexturedQuad(new PositionTextureVertex[] {lwyd, lwyz, lwhz, lwhd}, pTexX + pD + pW, pTexY + pD, pTexX + pD + pW + pD, pTexY + pD + pH, pMRenderer.textureWidth, pMRenderer.textureHeight);
-        quadList[1] = new TexturedQuad(new PositionTextureVertex[] {lxyz, lxyd, lxhd, lxhz}, pTexX, pTexY + pD, pTexX + pD, pTexY + pD + pH, pMRenderer.textureWidth, pMRenderer.textureHeight);
-        quadList[2] = new TexturedQuad(new PositionTextureVertex[] {lwyd, lxyd, lxyz, lwyz}, pTexX + pD, pTexY, pTexX + pD + pW, pTexY + pD, pMRenderer.textureWidth, pMRenderer.textureHeight);
-        quadList[3] = new TexturedQuad(new PositionTextureVertex[] {lwhz, lxhz, lxhd, lwhd}, pTexX + pD + pW, pTexY + pD, pTexX + pD + pW + pW, pTexY, pMRenderer.textureWidth, pMRenderer.textureHeight);
-        quadList[4] = new TexturedQuad(new PositionTextureVertex[] {lwyz, lxyz, lxhz, lwhz}, pTexX + pD, pTexY + pD, pTexX + pD + pW, pTexY + pD + pH, pMRenderer.textureWidth, pMRenderer.textureHeight);
-        quadList[5] = new TexturedQuad(new PositionTextureVertex[] {lxyd, lwyd, lwhd, lxhd}, pTexX + pD + pW + pD, pTexY + pD, pTexX + pD + pW + pD + pW, pTexY + pD + pH, pMRenderer.textureWidth, pMRenderer.textureHeight);
+        quadList[0] = new TexturedQuad(new PositionTextureVertex[] {lwyd, lwyz, lwhz, lwhd}, (float) pTexX + pD + pW, (float) pTexY + pD, (float) pTexX + pD + pW + pD, (float) pTexY + pD + pH, pMRenderer.textureWidth, pMRenderer.textureHeight);
+        quadList[1] = new TexturedQuad(new PositionTextureVertex[] {lxyz, lxyd, lxhd, lxhz}, (float) pTexX, pTexY + pD, (float) pTexX + pD, (float) pTexY + pD + pH, pMRenderer.textureWidth, pMRenderer.textureHeight);
+        quadList[2] = new TexturedQuad(new PositionTextureVertex[] {lwyd, lxyd, lxyz, lwyz}, (float) pTexX + pD, pTexY, (float) pTexX + pD + pW, (float) pTexY + pD, pMRenderer.textureWidth, pMRenderer.textureHeight);
+        quadList[3] = new TexturedQuad(new PositionTextureVertex[] {lwhz, lxhz, lxhd, lwhd}, (float) pTexX + pD + pW, (float) pTexY + pD, (float) pTexX + pD + pW + pW, (float) pTexY, pMRenderer.textureWidth, pMRenderer.textureHeight);
+        quadList[4] = new TexturedQuad(new PositionTextureVertex[] {lwyz, lxyz, lxhz, lwhz}, (float) pTexX + pD, (float) pTexY + pD, (float) pTexX + pD + pW, (float) pTexY + pD + pH, pMRenderer.textureWidth, pMRenderer.textureHeight);
+        quadList[5] = new TexturedQuad(new PositionTextureVertex[] {lxyd, lwyd, lwhd, lxhd}, (float) pTexX + pD + pW + pD, (float) pTexY + pD, (float) pTexX + pD + pW + pD + pW, (float) pTexY + pD + pH, pMRenderer.textureWidth, pMRenderer.textureHeight);
 
         if (pMRenderer.mirror) {
             for (int li = 0; li < this.quadList.length; ++li) {

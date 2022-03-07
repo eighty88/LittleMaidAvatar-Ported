@@ -1,6 +1,7 @@
 package maid.model.api.model.caps;
 
-import com.mojang.blaze3d.vertex.Tesselator;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.model.ModelRenderer.*;
 import maid.model.api.renderer.ModelRenderer;
 
 public abstract class ModelBoxBase {
@@ -24,9 +25,9 @@ public abstract class ModelBoxBase {
     public ModelBoxBase(ModelRenderer pMRenderer, Object ... pArg) {
     }
 
-    public void render(Tesselator par1Tesselator, float par2) {
+    public void render(Tessellator par1Tessellator, float par2) {
         for (int var3 = 0; var3 < quadList.length; ++var3) {
-            quadList[var3].draw(par1Tesselator.getBuilder(), par2);
+            quadList[var3].draw(par1Tessellator.getBuilder(), par2);
         }
     }
 
