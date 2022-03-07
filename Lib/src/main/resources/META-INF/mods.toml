@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="All rights reserved"
+[[mods]]
+modId="maidlibrary"
+version="${file.jarVersion}"
+displayName="LittleMaid Model Library"
+credits="Thanks for this example mod goes to Java"
+authors="eight_y_88"
+description='''
+This is a description.
+'''
+[[dependencies.maidlibrary]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.maidlibrary]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
