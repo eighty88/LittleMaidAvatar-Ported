@@ -1,7 +1,7 @@
 package maid.model.api.model.caps;
 
 import maid.model.api.renderer.ModelRenderer;
-import net.minecraft.client.renderer.model.ModelLoader.
+import net.minecraft.client.renderer.model.ModelRenderer.*;
 
 public class ModelPlate extends ModelBoxBase {
 
@@ -202,7 +202,9 @@ public class ModelPlate extends ModelBoxBase {
                             vertexPositions[0],
                             vertexPositions[1],
                             vertexPositions[2],
-                            vertexPositions[3] });
+                            vertexPositions[3]
+                    }
+            );
             if (modelrenderer.mirror) {
                 quadList[0].flipFace();
             }
